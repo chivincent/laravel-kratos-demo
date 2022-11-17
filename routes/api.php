@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:kratos')
     ->get('/user', fn (Request $request) => response()->json($request->user()));
+
+Route::middleware('auth:kratos-database')
+    ->get('/db-user', fn (Request $request) => response()->json($request->user()));

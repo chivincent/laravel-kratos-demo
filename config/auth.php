@@ -45,6 +45,11 @@ return [
             'driver' => 'kratos',
             'provider' => 'kratos',
         ],
+
+        'kratos-database' => [
+            'driver' => 'kratos',
+            'provider' => 'kratos-database',
+        ],
     ],
 
     /*

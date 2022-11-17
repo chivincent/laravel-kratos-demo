@@ -1,0 +1,18 @@
+networks:
+  kratos-demo:
+
+services:
+  database:
+    image: 'postgres:alpine'
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=forge
+      - POSTGRES_PASSWORD=password
+      - PGPASSWORD=password
+      - POSTGRES_DB=forge
+    volumes:
+      - type: bind
+        source: ./docker/services/database
+        target: /docker-entrypoint-initdb.d
+    networks: ['kratos-demo']

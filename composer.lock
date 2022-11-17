@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "54342c469825216223db0f646bb6fb92",
     "packages": [
         {
             "name": "brick/math",
@@ -61,6 +61,59 @@
                 }
             ],
             "time": "2022-08-10T22:54:19+00:00"
+        },
+        {
+            "name": "chivincent/laravel-kratos",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chivincent/laravel-kratos.git",
+                "reference": "0a61052b8a472ef014fbbbf3e5638b939a998b61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chivincent/laravel-kratos/zipball/0a61052b8a472ef014fbbbf3e5638b939a998b61",
+                "reference": "0a61052b8a472ef014fbbbf3e5638b939a998b61",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^9.39",
+                "ory/kratos-client-php": "^0.10.1",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "orchestra/testbench": "^7.13"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Chivincent\\LaravelKratos\\KratosServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Chivincent\\LaravelKratos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Chi",
+                    "email": "song374561@chivincent.net"
+                }
+            ],
+            "description": "Laravel Kratos integrates authentication features with ory/kratos",
+            "support": {
+                "issues": "https://github.com/chivincent/laravel-kratos/issues",
+                "source": "https://github.com/chivincent/laravel-kratos/tree/v1.0.2"
+            },
+            "time": "2022-11-17T15:16:22+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2103,6 +2156,75 @@
                 }
             ],
             "time": "2022-10-28T22:51:32+00:00"
+        },
+        {
+            "name": "ory/kratos-client-php",
+            "version": "v0.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ory/kratos-client-php.git",
+                "reference": "738f452305556a487505d81ff56d9727b6a90b6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ory/kratos-client-php/zipball/738f452305556a487505d81ff56d9727b6a90b6c",
+                "reference": "738f452305556a487505d81ff56d9727b6a90b6c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^7.3",
+                "guzzlehttp/psr7": "^1.7 || ^2.0",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12",
+                "phpunit/phpunit": "^8.0 || ^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ory\\Kratos\\Client\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ory GmbH",
+                    "homepage": "https://www.ory.sh"
+                }
+            ],
+            "description": "Documentation for all public and administrative Ory Kratos APIs. Public and administrative APIs are exposed on different ports. Public APIs can face the public internet without any protection while administrative APIs should never be exposed without prior authorization. To protect the administative API port you should use something like Nginx, Ory Oathkeeper, or any other technology capable of authorizing incoming requests.",
+            "homepage": "https://github.com/ory/kratos-client-php",
+            "keywords": [
+                "api",
+                "openapi",
+                "openapi-generator",
+                "openapitools",
+                "php",
+                "rest",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/ory/kratos-client-php/issues",
+                "source": "https://github.com/ory/kratos-client-php/tree/v0.10.1"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/ory",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://www.patreon.com/_ory",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2022-06-01T11:23:38+00:00"
         },
         {
             "name": "phpoption/phpoption",
